@@ -13,12 +13,13 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Send"
+        android:text="@string/send_button_text"
         android:id="@+id/ButtonActTwo"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:onClick="SendSMSButton"/>
+        android:onClick="SendSMSButton"
+        android:textSize="20sp" />
 
 
     <EditText
@@ -30,27 +31,34 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:hint="Phone Number" />
+        android:hint="@string/phone_number_hint"
+        android:textSize="20sp"
+        android:background="#ffffff"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editTextMessage"
-        android:hint="Write Message here"
-        android:layout_alignTop="@+id/ButtonActTwo"
+        android:hint="@string/write_message_here_hint"
+        android:textSize="20sp"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_toLeftOf="@+id/ButtonActTwo"
-        android:layout_toStartOf="@+id/ButtonActTwo" />
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" />
 
     <ListView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="90dp"
         android:id="@+id/SMSList"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_above="@+id/editTextMessage"
-        android:layout_below="@+id/editTextPhone2" />
+        android:layout_below="@+id/editTextPhone2"
+        android:layout_marginBottom="15dp" />
 
 
 </RelativeLayout>

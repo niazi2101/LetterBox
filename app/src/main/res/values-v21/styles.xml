@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="android:Theme.Material.Light">
+        <!-- Customize your theme here. -->
+        <!-- <item name="android:background">@color/backgroudColor</item>-->
+        <item name="android:windowBackground">@color/custom_theme_color</item>
+        <!-- This line is changing the actionbar color -->
+        <item name="android:colorBackground">#eac644</item>
+    </style>
+
+</resources>
